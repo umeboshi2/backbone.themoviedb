@@ -7,7 +7,7 @@
     "dist",
     "src"
   ],
- "scripts": {
+  "scripts": {
     "build": "webpack",
     "compile": "NODE_ENV=production webpack",
     "package": "rm -fr dist && npm run build && npm run compile",
