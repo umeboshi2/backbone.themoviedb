@@ -2,7 +2,7 @@ import { BaseMovieDbModel, BaseMovieDbCollection} from './base'
 
 
 export class TvDetails extends BaseMovieDbModel
-  url: -> "#{@baseUri}/tv"
+  urlRoot: -> "#{@baseUri}/tv"
 
 export class TvCredits extends BaseMovieDbModel
   url: -> "#{@baseUri}/tv/#{@id}/credits"
@@ -21,3 +21,6 @@ export class TvPopularShows extends BaseMovieDbCollection
 
 export class TvTopRatedShows extends BaseMovieDbCollection
   url: -> "#{@baseUri}/tv/top_rated"
+
+export class TvSeasonDetails extends BaseMovieDbModel
+  urlRoot: ->  "#{@baseUri}/tv/#{@tvId}/season"
