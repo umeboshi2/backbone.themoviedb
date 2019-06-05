@@ -41,8 +41,6 @@ if BuildEnvironment is 'production'
     new UglifyJsPlugin
       sourceMap: true
       uglifyOptions:
-        compress:
-          warnings: true
         warnings: true
     ]
 AllPlugins = common_plugins.concat extraPlugins
