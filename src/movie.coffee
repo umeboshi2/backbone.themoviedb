@@ -1,5 +1,6 @@
 import { BaseMovieDbModel, BaseMovieDbCollection} from './base'
 
+baseUri = "https://api.themoviedb.org/3"
 
 export class MovieDetails extends BaseMovieDbModel
   urlRoot: -> "#{@baseUri}/movie"
@@ -21,4 +22,3 @@ export class MoviePopularMovies extends BaseMovieDbCollection
 
 export class MovieTopRatedMovies extends BaseMovieDbCollection
   url: -> "#{@baseUri}/movie/top_rated"
-

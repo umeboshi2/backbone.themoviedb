@@ -1,5 +1,8 @@
 import { BaseMovieDbModel } from './base'
 
+baseUri = "https://api.themoviedb.org/3"
 
-export default class ConfigModel extends BaseMovieDbModel
+class ConfigModel extends BaseMovieDbModel
   url: -> "#{@baseUri}/configuration"
+
+export default ConfigModel

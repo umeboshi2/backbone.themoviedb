@@ -1,5 +1,6 @@
 import { BaseMovieDbModel, BaseMovieDbCollection} from './base'
 
+baseUri = "https://api.themoviedb.org/3"
 
 export class TvDetails extends BaseMovieDbModel
   urlRoot: -> "#{@baseUri}/tv"

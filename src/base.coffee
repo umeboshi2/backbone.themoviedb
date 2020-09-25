@@ -1,9 +1,9 @@
-import Backbone from 'backbone'
+import { Model } from 'backbone'
 import PageableCollection from 'backbone.paginator'
 
 baseUri = "https://api.themoviedb.org/3"
 
-export class BaseMovieDbModel extends Backbone.Model
+export class BaseMovieDbModel extends Model
   baseUri: baseUri
   fetch: (options) ->
     options = options or {}
